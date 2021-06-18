@@ -9,6 +9,7 @@ function throwNotSupportedError() {
 switch (os.platform()) {
   case "darwin":
   case "linux":
+  case "MacIntel":
     module.exports = {
       print: require("./unix/print"),
       getPrinters: require("./unix/get-printers"),
